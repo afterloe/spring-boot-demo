@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
-	compile("org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE")
-    testCompile 'junit:junit:4.12'
+	compile("org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE") // spring boot 核心
+	compile("org.springframework.boot:spring-boot-starter-actuator") // spring boot 健康状态监控 curl host:port/health
+  testCompile 'junit:junit:4.12'
 }
